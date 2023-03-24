@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Grading System Assignment</h1>
+    <div class="main">
+        <div class="side1">
+            <header id="header1">
+                Grading System in JS
+            </header>
+            <section>
+                <form>
+                    English:<input type="number" min="0" max="100" id="eng"/><br>
+                    Maths:<input type="number" min="0" max="100" id="math"/><br>
+                    Physics:<input type="number" min="0" max="100" id="phy"/><br>
+                    Chemistry:<input type="number" min="0" max="100" id="chem"/><br>
+                    Computer:<input type="number" min="0" max="100" id="comp"/><br><br>
+                    <button type="submit" onclick="grade(); return false">Calculate Grade</button>
+                </form>
+            </section>
+        </div>
+        <div class="side2">
+            <div>
+                <header id="header2">Total</header>
+                <section id="tot"></section>
+            </div>
+            <div>
+                <header id="header3">Average</header>
+                <section id="avg"></section>
+            </div>
+            <div>
+                <header id="header4">Grade</header>
+                <section id="grade"></section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
